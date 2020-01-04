@@ -1,2 +1,2 @@
 #  FriendFace
-<img src="FriendFace" width="400" />
+<img src="FriendFace.gif" width="400" />
