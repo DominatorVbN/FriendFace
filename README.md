@@ -1,2 +1,2 @@
 #  FriendFace
-![Alt Text](FriendFace.gif)
+<img src="FriendFace" width="400" />
