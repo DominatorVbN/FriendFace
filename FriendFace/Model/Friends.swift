@@ -9,7 +9,7 @@
 import SwiftUI
 
 // MARK: - Friend
-struct Friend: Codable, Identifiable {
+struct FriendResponseModel: Codable, Identifiable {
     let id: String
     let isActive: Bool
     let name: String
@@ -17,12 +17,12 @@ struct Friend: Codable, Identifiable {
     let company, email, address, about: String
     let registered: Date
     let tags: [String]
-    let friends: [FriendShortModel]
+    let friends: [FriendShortResponseModel]
 }
 
 // MARK: - FriendElement
-struct FriendShortModel: Codable, Identifiable {
+struct FriendShortResponseModel: Codable, Identifiable {
     let id, name: String
 }
 
-typealias Friends = [Friend]
+typealias Friends = [FriendResponseModel]

@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 SearchBar(searchText: $searchText)
-                List(model.friends.filter{$0.name.hasPrefix(searchText) || searchText == ""}) { (friend: Friend) in
+                List(model.friends.filter{$0.name.hasPrefix(searchText) || searchText == ""}) { (friend: FriendResponseModel) in
                     NavigationLink(destination: FriendDetail(friend: friend, model: self.model )){
                         VStack(alignment: .leading) {
                             Text(friend.name)

@@ -18,6 +18,10 @@
 		836207C123C0EFE100F67251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836207C023C0EFE100F67251 /* Assets.xcassets */; };
 		836207C423C0EFE100F67251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836207C323C0EFE100F67251 /* Preview Assets.xcassets */; };
 		836207C723C0EFE100F67251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836207C523C0EFE100F67251 /* LaunchScreen.storyboard */; };
+		8376E4E423C22DF400657032 /* FriendShortModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376E4E023C22DF400657032 /* FriendShortModel+CoreDataClass.swift */; };
+		8376E4E523C22DF400657032 /* FriendShortModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376E4E123C22DF400657032 /* FriendShortModel+CoreDataProperties.swift */; };
+		8376E4E623C22DF400657032 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376E4E223C22DF400657032 /* Friend+CoreDataClass.swift */; };
+		8376E4E723C22DF400657032 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376E4E323C22DF400657032 /* Friend+CoreDataProperties.swift */; };
 		83A8C34323C0F2F50027A58D /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8C34223C0F2F50027A58D /* Friends.swift */; };
 		83A8C34623C0F3350027A58D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8C34523C0F3350027A58D /* Webservice.swift */; };
 		83A8C34823C0F3920027A58D /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8C34723C0F3920027A58D /* FriendsViewModel.swift */; };
@@ -38,6 +42,10 @@
 		836207C323C0EFE100F67251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		836207C623C0EFE100F67251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836207C823C0EFE100F67251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8376E4E023C22DF400657032 /* FriendShortModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendShortModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8376E4E123C22DF400657032 /* FriendShortModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendShortModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8376E4E223C22DF400657032 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8376E4E323C22DF400657032 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		83A8C34223C0F2F50027A58D /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		83A8C34523C0F3350027A58D /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		83A8C34723C0F3920027A58D /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 		836207B623C0EFDA00F67251 /* FriendFace */ = {
 			isa = PBXGroup;
 			children = (
+				8376E4E023C22DF400657032 /* FriendShortModel+CoreDataClass.swift */,
+				8376E4E123C22DF400657032 /* FriendShortModel+CoreDataProperties.swift */,
+				8376E4E223C22DF400657032 /* Friend+CoreDataClass.swift */,
+				8376E4E323C22DF400657032 /* Friend+CoreDataProperties.swift */,
 				833D397723C0FFF4004C9BD3 /* Views */,
 				833D397623C0FDF1004C9BD3 /* Utility */,
 				83A8C34923C0F3990027A58D /* ViewModel */,
@@ -213,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8376E4E523C22DF400657032 /* FriendShortModel+CoreDataProperties.swift in Sources */,
 				836207BD23C0EFDA00F67251 /* FriendFace.xcdatamodeld in Sources */,
 				836207B823C0EFDA00F67251 /* AppDelegate.swift in Sources */,
 				833D397523C0FDDC004C9BD3 /* Keyboard.swift in Sources */,
@@ -222,7 +235,10 @@
 				833D397923C10003004C9BD3 /* SearchBar.swift in Sources */,
 				83A8C34823C0F3920027A58D /* FriendsViewModel.swift in Sources */,
 				83A8C34323C0F2F50027A58D /* Friends.swift in Sources */,
+				8376E4E423C22DF400657032 /* FriendShortModel+CoreDataClass.swift in Sources */,
+				8376E4E623C22DF400657032 /* Friend+CoreDataClass.swift in Sources */,
 				836207BA23C0EFDA00F67251 /* SceneDelegate.swift in Sources */,
+				8376E4E723C22DF400657032 /* Friend+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

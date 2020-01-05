@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct FriendDetail: View {
-    let friend: Friend
+    let friend: FriendResponseModel
     let model: FriendsListViewModel
     var body: some View {
         ScrollView{
@@ -39,7 +39,7 @@ struct FriendDetail: View {
                     .multilineTextAlignment(.leading)
                     .lineLimit(nil)
                     .padding()
-                ForEach(friend.friends){ (shortFriend: FriendShortModel) in
+                ForEach(friend.friends){ (shortFriend: FriendShortResponseModel) in
                     NavigationLink(destination: FriendDetail(friend: self.model.friends.first(where: {$0.id == shortFriend.id})!, model: self.model)) {
                         HStack{
                             Text(shortFriend.name)
@@ -54,6 +54,6 @@ struct FriendDetail: View {
 
 struct FriendDetail_Previews: PreviewProvider {
     static var previews: some View {
-        FriendDetail(friend: Friend(id: "qw", isActive: true, name: "Amit", age: 12, company: "EB", email: "amit", address: "asfasf", about: "afssfas", registered: Date(), tags: ["asdf"], friends: []), model: FriendsListViewModel())
+        FriendDetail(friend: FriendResponseModel(id: "qw", isActive: true, name: "Amit", age: 12, company: "EB", email: "amit", address: "asfasf", about: "afssfas", registered: Date(), tags: ["asdf"], friends: []), model: FriendsListViewModel())
     }
 }
